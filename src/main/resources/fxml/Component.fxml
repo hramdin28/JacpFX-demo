@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox fx:id="topContent" prefHeight="100.0" prefWidth="200.0"
+              style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"/>
+        <HBox fx:id="middleContent" prefHeight="100.0" prefWidth="200.0"
+              style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"/>
+        <HBox fx:id="bottomContent" prefHeight="100.0" prefWidth="200.0"
+              style=" -fx-border-color:black; -fx-border-width: 1; -fx-border-style: solid;"/>
+        <Button fx:id="btnSend" mnemonicParsing="false" onAction="#sendAction" prefHeight="31.0" prefWidth="613.0"
+                text="Send request"/>
+        <Label text="Server response"/>
+        <TextArea fx:id="textRespArea" prefHeight="134.0" prefWidth="600.0"/>
+    </children>
+</VBox>
